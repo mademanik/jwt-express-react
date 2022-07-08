@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Ik1hZGUgTWFuaWsiLCJlbWFpbCI6Im1hbmlreWFzYUBnbWFpbC5jb20iLCJpYXQiOjE2NTcwNDI0MDcsImV4cCI6MTY1NzA0MjQyN30.JHUwjZ_wMKPb_nNuelbBZXgfVPpSb4UItH5x-L2PkaQ
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+	"name" : "Made Manik 2",
+	"email" : "manikyasa2@gmail.com",
+	"password" : "123456",
+	"confPassword" : "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+	"email" : "manikyasa@gmail.com",
+    "password" : "123456"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
